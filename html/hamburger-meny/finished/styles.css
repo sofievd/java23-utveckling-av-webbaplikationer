@@ -1,3 +1,17 @@
 body {
-  background-color: antique;
+  background-color: antiquewhite;
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.hamburger:hover {
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
 }
