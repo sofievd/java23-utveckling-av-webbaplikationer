@@ -1,0 +1,106 @@
+:root {
+  --white: #FEFAE0;
+  --black: #333;
+  --dark-blue: #264653;
+  --teal: #2A9D8F;
+  --burnt-yellow: #E9C46A;
+  --orange: #F4A261;
+  --dark-orange: #E76F51;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  height: 100vh;
+  
+  box-sizing: border-box;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  /* flex-direction: column; */
+  /* background-color: var(--white);
+  border-radius: .5rem;
+  padding: 1rem; */
+}
+
+.container > div {
+  text-align: center;
+  padding: .5rem 1rem;
+
+  /* width: 100%; */
+  /* width: 200px; */
+  
+  border-radius: .5rem;
+  /* flex: 1; */
+}
+
+#boxA {
+  background-color: var(--orange);
+  /* width: 100%; */
+}
+#boxB {
+  background-color: var(--teal);
+}
+#boxC {
+  background-color: var(--dark-orange);
+}
+#boxD {
+  background-color: var(--burnt-yellow);
+}
+
+.card {
+  /* display: flex;
+  margin: 0 auto;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: .5rem;
+  width: 80%;
+  max-width: 800px; */
+}
+
+.image {
+  /* background-image: url("brooke-lark-smoothie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: .5rem; */
+}
+
+.card > * {
+  /* flex: 1; */
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.ingredients {
+  padding: 1rem;
+}
+
+.ingredients > h2 {
+  margin: .5rem 0;
+}
+
+.ingredients > ul {
+  padding: 0;
+}
+
+.ingredients > ul > * {
+  list-style: none;
+  margin: .5rem 0;
+}
