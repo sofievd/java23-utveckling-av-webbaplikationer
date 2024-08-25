@@ -64,12 +64,24 @@ css/bootstrap.min.css">
 </head>
 <body>
   <header>
-    <h1>Logged in</h1>
+    <h1 id="welcomeMessage"></h1>
   </header>
   <section class="section-2">
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
     <p id="last">Lorem ipsum dolor sit amet.</p>
   </section>
+
+  <script>
+    const welcomeMessage = document.querySelector('#welcomeMessage')
+    document.addEventListener('DOMContentLoaded', function() {
+      const username = localStorage.getItem('username');
+      if (username) {
+        welcomeMessage.textContent = `Hello ${username}`;
+      } else {
+        welcomeMessage.textContent = "Hello guest.";
+      }
+    });
+  </script>
 </body>
 </html>

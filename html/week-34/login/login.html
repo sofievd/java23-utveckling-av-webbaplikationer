@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    text-align: center;
+  }
+
+  #loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+</style>
+<body>
+  <main class="login-container">
+    <!-- <img src="logo.png" alt="Logo"> -->
+    <form method="post" id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" name="username" placeholder="Enter username" required>
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="Enter password" required>
+      <input type="submit" value="Login">
+    </form>
+  </main>
+
+  <script>
+    document.querySelector("#loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const username = event.target.username.value;
+      localStorage.setItem('username', username);
+
+      window.location.href = 'loggedIn.html'
+    })
+  </script>
+  
+</body>
+</html>
