@@ -1,0 +1,14 @@
+:root {
+  --white: #FEFAE0;
+  --dark-blue: #264653;
+  --black: #333;
+  --teal: #2A9D8F;
+  --burnt-yellow: #E9C46A;
+  --orange: #F4A261;
+  --dark-orange: #E76F51;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
