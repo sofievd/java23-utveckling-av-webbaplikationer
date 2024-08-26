@@ -1,0 +1,31 @@
+body {
+  background-color: blue;
+}
+
+#nav {
+
+
+}
+
+p {
+
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #888
+}
+
+body > section > p:nth-child(1) {
+  background-color: #333;
+}
+
+
+body > section > p:nth-child(2) {
+  background-color: yellow !important;
+}
+
+
