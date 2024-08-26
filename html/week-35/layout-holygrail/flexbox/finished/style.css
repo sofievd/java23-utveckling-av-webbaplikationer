@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: #E07A5F;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+main {
+  background-color: #F4F1DE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 5;
+}
+
+.main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+.left-sidebar {
+  display: flex;
+  background-color: #F2CC8F;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.right-sidebar {
+  display: flex;
+  background-color: #81B29A;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+footer {
+  background-color: #3D405B;
+  color: #F4F1DE;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+/* responsive layout */
+
+/* ipad mini */
+@media screen and (min-width: 600px) {
+  .main-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  header, main, footer {
+    width: 100%;
+  }
+
+  main {
+    order: 1;
+  }
+  .left-sidebar {
+    order: 2;
+  }
+  .right-sidebar {
+    order: 3;
+  }
+}
+
+/* macbook air */
+@media screen and (min-width: 1200px) {
+  header {
+    order: 0;
+  }
+
+  .left-sidebar {
+    order: 2;
+    flex: 1;
+  }
+
+  .main-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  main {
+    order: 3;
+    flex: 4;
+  }
+
+  .right-sidebar {
+    order: 4;
+    flex: 1;
+  }
+
+  footer {
+    order: 5;
+  }
+}
