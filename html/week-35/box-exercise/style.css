@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  border: 1px solid #000000;
+  background-color: #71fb7c73;
+  padding: 1em;
+
+  height: 500px;
+
+  display: flex;
+
+  /*flex-direction: row;*/ /* row | column -> to set main-axis & corss-axis  horizontal or vertical*/
+
+  justify-content: flex-end; /* flex-start | flex-end | space-between | space-around */
+
+  align-items: flex-end; /* flex-start | flex-end stretch | center */ /* set height of container first */
+
+  /*flex-wrap: wrap;*/ /* allow items to newline */
+  /* align-content: space-between; */ /* only for multiline flexbox */
+
+}
+
+.flex-item {
+  border: 1px solid #000000;
+  background-color:#bacff7;
+  margin: 10px;
+  width: 150px;
+ 
+}
+
+.flex-item-1 {
+  order: 1;
+  min-height: 120px;
+  align-self: flex-start;
+
+  /*flex-shrink: 0;*/ /* how the item should shrink */
+ flex-grow: 2; /* how to grow from it´s orginial width when extra space is needed (override with flex-basis */
+  /*flex-basis: 1;*/
+
+ align-self: center; /*flex-start | flex-end | stretch | center | baseline*/
+}
+
+.flex-item-2 {
+  order: 2;
+  min-height: 180px;
+  /*flex-shrink: */
+  flex-grow: 1;
+  /*flex-basis: 0; */
+}
+
+.flex-item-3 {
+  order: 3;
+  min-height: 250px;
+  /*flex-shrink: */
+  /*flex-grow: ; */
+  /* flex-basis: 0; */
+  align-self: flex-start;
+}
