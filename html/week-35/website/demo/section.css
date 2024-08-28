@@ -6,3 +6,27 @@ section {
   width: 80%;
   max-width: 600px;
 }
+
+
+@media screen and (min-width: 600px) {
+  section {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  section > * {
+    flex: 1;
+  }
+  
+  .img-container {
+    background-color: brown;
+    background-image: url("../images/david-cain-installation-mobile.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+}
