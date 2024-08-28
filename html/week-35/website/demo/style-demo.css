@@ -1,0 +1,12 @@
+:root {
+  --strong-text: 700;
+  --regular-padding: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+}

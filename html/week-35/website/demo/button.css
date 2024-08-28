@@ -1,0 +1,15 @@
+.button {
+  background-color:cadetblue;
+  color: white;
+  border-radius: .5rem;
+  padding: .8rem 1.3rem;
+  width: 100px;
+}
+
+.top--padding {
+  margin-top: .8rem;
+}
+
+.display--block {
+  display: inline-block;
+}
