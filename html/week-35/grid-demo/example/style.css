@@ -1,0 +1,158 @@
+:root {
+  --white: #FEFAE0;
+  --dark-blue: #264653;
+  --black: #333;
+  --teal: #2A9D8F;
+  --burnt-yellow: #E9C46A;
+  --orange: #F4A261;
+  --dark-orange: #E76F51;
+}
+
+body {
+  width: 90%;
+  margin: 2em auto;
+  /* text-align: center; */
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.grid-container > *,
+.grid-layout > * {
+  border: 2px solid var(--dark-orange);
+  background-color: var(--orange);
+  grid-auto-rows: 300px;
+  padding: 1rem;
+}
+
+.container--styling {
+  color: var(--black);
+  background-color: var(--burnt-yellow);
+  border: 1px solid var(--dark-blue);
+  padding: 1rem;
+}
+
+hr {
+  margin: 3rem;
+}
+
+.grid-container {
+
+  /* GRID */
+
+  display: grid;
+  gap: 1rem;
+
+  /* grid-template-columns: 2fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* grid-auto-rows: 100px; */
+  /* grid-auto-rows: 200px; */
+  /* grid-auto-rows: minmax(200px, auto); */
+
+  /* 
+    Funktionen minmax() låter oss sätta minimum eller maximum storlek 
+    Exempel, 
+      grid-auto-rows: minmax(100px, auto);
+      
+      minsta höjd-storlek på en row, 100px eller fyll efter innehåll.
+  */
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-layout {
+  font-weight: 900;
+  font-size: 42px;
+
+  display: grid;
+
+  grid-template-areas: 
+  "header"
+  "article"
+  "aside"
+  "footer";
+
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 1rem;
+
+  /* justify-items: center;
+  align-items: center; */
+}
+
+header {
+  grid-area: header;
+}
+article {
+  grid-area: article;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+
+@media screen and (min-width: 500px) {
+  .grid-layout {
+  grid-template-areas: 
+  "header header header"
+  ". article ."
+  ". article ."
+  ". article ."
+  "footer footer footer";
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 1rem;
+
+  }
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* grid with line-based placement */
+/* header {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+article {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / 3;
+  grid-row: 3;
+} */
+
+/* grid with name-based placement */
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+}
+
+#subgrid {
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  display: grid;
+  gap: inherit;
+  grid-template-columns: subgrid;
+  grid-template-rows: 2fr 1fr;
+}
