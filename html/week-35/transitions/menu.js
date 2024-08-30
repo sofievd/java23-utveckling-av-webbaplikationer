@@ -1,3 +1,10 @@
+window.addEventListener('DOMContentLoaded', () => {
+  const navItems = document.querySelectorAll('.nav-list > li');
+  navItems.forEach(item => {
+    item.classList.add('transition')
+  })
+})
+
 const listElements = document.querySelectorAll("li");
 const liWithoutClass = Array.from(listElements).filter((li) => !li.id);
 
