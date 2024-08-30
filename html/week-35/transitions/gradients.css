@@ -1,0 +1,126 @@
+.gradients-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.stripes--rainbow {
+  cursor: pointer;
+
+  background-image: radial-gradient(
+    circle at top left,
+    #ec407a,
+    #ec407a 20%,
+    #7e57c2 20%,
+    #7e57c2 40%,
+    #42a5f5 40%,
+    #42a5f5 60%,
+    #26a69a 60%,
+    #26a69a 80%,
+    #9ccc65 80%
+  );
+  background-size: 200% 200%;
+  transition: background-position 1s linear;
+}
+.stripes--rainbow:hover {
+  animation: move-gradient 2s infinite linear;
+}
+@keyframes move-gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.stripes--dots {
+  cursor: pointer;
+  
+  position: relative;
+  background-color: #64b5f6;
+  overflow: hidden;
+}
+.stripes--dots::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* 
+  inset: 0;
+  förkortning för:
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  */
+  background-image: radial-gradient(#90caf9 20%, transparent 20%),
+    radial-gradient(#1e88e5 20%, transparent 20%);
+  background-color: #64b5f6;
+  background-position: top left, 50px 50px;
+  background-size: 100px 100px;
+
+  transform-origin: center center;
+  transition: transform 1s linear;
+}
+.stripes--dots:hover::before {
+  transform: rotate(360deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.stripes--hypno {
+  background: repeating-radial-gradient(
+    circle at 100%,
+    #333,
+    #333 10px,
+    #999 10px,
+    #999 20px
+  );
+}
+
+.stripes--green {
+  background-color: #689f38;
+  background-image: repeating-linear-gradient(
+    -25deg,
+    transparent,
+    transparent 40px,
+    #aed581 40px,
+    #aed581 50px
+  );
+}
+
+.stripes--yellow {
+  background-color: #ffd600;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 9px,
+    #f4ff81 9px,
+    #f4ff81 10px
+  );
+}
+
+.stripes--checkers {
+  background-image: repeating-linear-gradient(
+      90deg,
+      rgba(224, 82, 67, 0.5) 0px,
+      rgba(224, 82, 67, 0.5) 40px,
+      transparent 40px,
+      transparent 80px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(224, 82, 67, 0.5) 0px,
+      rgba(224, 82, 67, 0.5) 40px,
+      transparent 40px,
+      transparent 80px
+    ),
+    linear-gradient(90deg, hsl(250, 82%, 1%), hsl(250, 82%, 1%));
+}
