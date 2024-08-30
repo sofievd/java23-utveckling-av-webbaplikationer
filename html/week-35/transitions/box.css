@@ -1,0 +1,141 @@
+.box-container {
+  display: grid;
+  background-color: var(--teal);
+
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  padding: 1rem;
+  gap: 1rem;
+}
+
+code {
+  font-weight: 700;
+}
+
+.box {
+  min-height: 50px;
+  padding: 1rem;
+  background-color: var(--orange);
+  border: 1px solid var(--dark-orange);
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s;
+  
+  /* kan skrivas kort: */
+  /* transition: all 0.5s ease-out 0.2s; */
+}
+
+.box:hover {
+  background-color: var(--burnt-yellow);
+}
+
+.slide-in-container {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 80%;
+  border: 1px solid;
+}
+
+.box.animate-slide {
+  transform: translateX(0);
+}
+.box.animate-slide:hover {
+  animation: slide-in 0.7s ease-in-out both;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.box.animate-rotate:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box.animate-rotate-center:hover {
+  animation: rotate-center 0.7s ease-in-out both;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.box.animate-scale:hover {
+  animation: scale 1.5s both;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.truncate {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.truncate:hover {
+  overflow: visible;
+  white-space: wrap;
+  height: 100%;
+  text-overflow: unset;
+}
+
+.box.join-now {
+  position: relative;
+  isolation: isolate; /* If ommitted, child pseudo element will be stacked behind */
+}
+
+.box.join-now::before {
+  content: "";
+  position: absolute;
+  background-color: #33b249;
+  top: 0;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  transition: left 500ms ease-out;
+
+  z-index: -1;
+}
+
+.box.join-now:hover::before {
+  left: 0;
+}
