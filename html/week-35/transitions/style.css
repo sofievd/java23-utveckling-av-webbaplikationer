@@ -1,3 +1,12 @@
+:root {
+  --white: #FEFAE0;
+  --dark-blue: #264653;
+  --black: #333;
+  --teal: #2A9D8F;
+  --burnt-yellow: #E9C46A;
+  --orange: #F4A261;
+  --dark-orange: #E76F51;
+}
 html {
   height: 100vh;
 }
@@ -7,57 +16,3 @@ body {
   color: #fff;
 }
 
-.nav-list {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-.nav-list > li {
-  list-style: none;
-  border: 1px solid;
-  background-color: lightcoral;
-  text-align: center;
-
-  transition: all 0.5s ease-out;
-
-  padding: 1rem;
-}
-
-.flex {
-  flex: 1;
-}
-
-.nav-list > #toggle-button {
-  background-color: lightblue;
-  color: #333;
-}
-
-.nav-list > li > a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav-list > li:hover,
-.nav-list > li:focus {
-  background-color: #fff;
-  transform: scale(1.2);
-
-  a {
-    color: #333;
-  }
-}
-
-.hide {
-  opacity: 0;
-  display: hidden;
-  transition: opacity 1s;
-}
-
-.show {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 1s;
-}
