@@ -1,0 +1,28 @@
+.scroll-snapp-container {
+  overflow-y: scroll; /* Aktivera vertikal rullning */
+  height: 80vh; /* Se till att containern fyller hela vyhöjden */
+  scroll-snap-type: y mandatory; /* Aktivera vertikal rullsnappning */
+}
+
+.scroll-snapp-container > article {
+  scroll-snap-align: start; /* Justera början av varje artikel med början av containern */
+  font-size: 4.5rem;
+  height: 80vh; /* Se till att varje artikel fyller hela vyhöjden */
+  color: #333;
+}
+
+.scroll-snapp-container > article:nth-child(1) {
+  background-color: lightblue;
+}
+.scroll-snapp-container > article:nth-child(2) {
+  background-color: lightcoral;
+}
+.scroll-snapp-container > article:nth-child(3) {
+  background-color: lightcyan;
+}
+.scroll-snapp-container > article:nth-child(4) {
+  background-color: lightgreen;
+}
+.scroll-snapp-container > article:nth-child(5) {
+  background-color: lightsalmon;
+}
