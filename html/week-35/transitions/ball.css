@@ -13,3 +13,12 @@
 .hide {
   display: none;
 }
+
+.play-ball > h2 {
+  background: linear-gradient(100deg, blue, green);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 4.5rem;
+}
