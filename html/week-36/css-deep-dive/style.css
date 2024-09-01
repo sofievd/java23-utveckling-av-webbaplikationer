@@ -29,7 +29,8 @@ p {
   padding: .5rem 0;
 }
 
-section {
+section,
+aside {
   margin: 2rem auto;
   width: 80%;
   max-width: 600px;
