@@ -1,0 +1,82 @@
+:root {
+  --warm-yellow: #ffb76d; /* Brand color */
+  --brown: #614634; /* Good for headings or accents */
+  --black: #0f1615; /* Use for text on light backgrounds */
+  --white: #f5f5f5; /* Use for text on dark backgrounds */
+  --cream-white: #ffead6; /* Background color */
+  --dark-gray: #333333; /* Use for paragraph text */
+  --orange: #be6321; /* Accent color */
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+h1 {
+  width: 60%;
+}
+h2,
+h3 {
+  padding: .5rem 0;
+}
+p {
+  padding: .5rem 0;
+}
+
+section {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+
+  padding: 1rem 0;
+
+  background-color: var(--brown);
+}
+
+.nav__item {
+  list-style-type: none;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+
+  color: var(--orange);
+}
+.nav__item > a {
+  color: inherit;
+}
+
+.nav__item--call-to-action {
+  border: 1px solid var(--warm-yellow);
+  color: var(--warm-yellow);
+}
+
+footer {
+  background-color: var(--brown);
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 2rem 0;
+  gap: .5rem;
+}
+
+footer > ul > li {
+  list-style: none;
+}
