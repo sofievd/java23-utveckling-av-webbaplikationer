@@ -25,6 +25,10 @@ body {
 .call {
   color: var(--warm-yellow);
   padding: .5rem;
+  transition: transform 0.3s ease;
+}
+.call:hover {
+  transform: rotate(10deg) scale(1.2);
 }
 .call > strong {
   display: none;
@@ -77,6 +81,8 @@ body {
   font-weight: 700;
 
   box-shadow: 0.2em 0.2em var(--orange);
+
+  transition: background-color 0.3s ease;
 }
 .button:hover {
   background-color: var(--warm-yellow);
