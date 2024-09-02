@@ -63,6 +63,22 @@ aside {
   color: var(--warm-yellow);
 }
 
+.card__item {
+  border: 1px solid var(--warm-yellow);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card__item--brown {
+  background-color: var(--brown);
+}
+
+.card__item--call-to-action {
+  background-color: var(--warm-yellow);
+  border: 1px solid var(--orange);
+  color: var(--black);
+}
+
 footer {
   background-color: var(--brown);
 }
