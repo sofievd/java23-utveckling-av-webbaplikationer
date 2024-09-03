@@ -1,0 +1,12 @@
+@use './variables';
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% variables.$font-stack;
+  background-color: variables.$primary-color;
+  color: variables.$text-color;
+}
