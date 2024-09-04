@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  gap: .5rem;
+}
+
+.navbar > li {
+  list-style: none;
+}
+
+.toggle-content {
+  background-color: red;
+  display: none;
+}
+
+.toggle-content:target,
+.toggle-content:active {
+  background-color: green;
+  display: block;
+}
