@@ -1,14 +1,15 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Att börja använda sass",
   "main": "index.js",
   "scripts": {
     "sass": "sass style.scss output.css"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.77.8"
+    "sass": "^1.78.0"
   }
 }

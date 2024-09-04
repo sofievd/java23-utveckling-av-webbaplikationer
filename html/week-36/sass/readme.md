@@ -12,7 +12,7 @@ node_modules
 
 // lägg till
 // i package.json
-    "sass": "sass"
+    "sass": "sass style.scss output.css"
 
 // kör sass med,
-npm run sass --watch input.scss output.css
+npm run sass style.scss output.css
