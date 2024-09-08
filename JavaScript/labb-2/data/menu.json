@@ -1,0 +1,83 @@
+{
+  "Grill": [
+    {
+      "name": "BBQ Revben",
+      "price": "120.0",
+      "description": "Långkokta revben med BBQ-sås"
+    },
+    {
+      "name": "Grillad Kyckling",
+      "price": "150.0",
+      "description": "Marinerad kycklingbröst grillad till perfektion"
+    },
+    {
+      "name": "Biff",
+      "price": "190.0",
+      "description": "Saftig biff med vitlökssmör"
+    },
+    {
+      "name": "Grillad Lax",
+      "price": "180.0",
+      "description": "Laxfilé med citron och örter"
+    },
+    {
+      "name": "Grönsaksspett",
+      "price": "80.0",
+      "description": "Blandade grönsaker grillade med olivolja"
+    }
+  ],
+  "Snacks": [
+    {
+      "name": "Pommes Frites",
+      "price": "50.0",
+      "description": "Krispiga gyllene pommes frites"
+    },
+    {
+      "name": "Lökringar",
+      "price": "60.0",
+      "description": "Panerade och friterade lökringar"
+    },
+    {
+      "name": "Mozzarella Sticks",
+      "price": "70.0",
+      "description": "Friterade mozzarellaoststänger"
+    },
+    {
+      "name": "Kycklingvingar",
+      "price": "90.0",
+      "description": "Kryddiga kycklingvingar med dipsås"
+    },
+    {
+      "name": "Nachos",
+      "price": "80.0",
+      "description": "Tortillachips med ost och jalapeños"
+    }
+  ],
+  "Drycker": [
+    {
+      "name": "Coca Cola",
+      "price": "30.0",
+      "description": "Klassisk Coca Cola"
+    },
+    {
+      "name": "Apelsinjuice",
+      "price": "40.0",
+      "description": "Färskpressad apelsinjuice"
+    },
+    {
+      "name": "Lemonad",
+      "price": "35.0",
+      "description": "Hemlagad lemonad"
+    },
+    {
+      "name": "Is-te",
+      "price": "35.0",
+      "description": "Kall te med citron"
+    },
+    {
+      "name": "Kaffe",
+      "price": "25.0",
+      "description": "Nybryggt kaffe"
+    }
+  ]
+}

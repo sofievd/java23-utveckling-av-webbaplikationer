@@ -1,0 +1,119 @@
+{
+  "prices": {
+    "BBQ Ribs": 120.0,
+    "Grilled Chicken": 150.0,
+    "Steak": 190.0,
+    "Grilled Salmon": 180.0,
+    "Vegetable Skewers": 80.0,
+    "French Fries": 50.0,
+    "Onion Rings": 60.0,
+    "Mozzarella Sticks": 70.0,
+    "Chicken Wings": 90.0,
+    "Nachos": 80.0,
+    "Coca Cola": 30.0,
+    "Orange Juice": 40.0,
+    "Lemonade": 35.0,
+    "Iced Tea": 35.0,
+    "Coffee": 25.0
+  },
+  "weeklyMenu": {
+    "Monday": {
+      "lunch": {
+        "name": "BBQ Revben",
+        "price": 108.0,
+        "description": "Långkokta revben med BBQ-sås",
+        "time": "11:00-14:00"
+      },
+      "dinner": {
+        "name": "Grillad Kyckling",
+        "price": 135.0,
+        "description": "Marinerad kycklingbröst grillad till perfektion",
+        "time": "17:00-20:00"
+      }
+    },
+    "Tuesday": {
+      "lunch": {
+        "name": "Biff",
+        "price": 171.0,
+        "description": "Saftig biff med vitlökssmör",
+        "time": "11:00-14:00"
+      },
+      "dinner": {
+        "name": "Grillad Lax",
+        "price": 162.0,
+        "description": "Laxfilé med citron och örter",
+        "time": "17:00-20:00"
+      }
+    },
+    "Wednesday": {
+      "lunch": {
+        "name": "Grönsaksspett",
+        "price": 72.0,
+        "description": "Blandade grönsaker grillade med olivolja",
+        "time": "11:00-14:00"
+      },
+      "dinner": {
+        "name": "Pommes Frites",
+        "price": 45.0,
+        "description": "Krispiga gyllene pommes frites",
+        "time": "17:00-20:00"
+      }
+    },
+    "Thursday": {
+      "lunch": {
+        "name": "Lökringar",
+        "price": 54.0,
+        "description": "Panerade och friterade lökringar",
+        "time": "11:00-14:00"
+      },
+      "dinner": {
+        "name": "Mozzarella Sticks",
+        "price": 63.0,
+        "description": "Friterade mozzarellaoststänger",
+        "time": "17:00-20:00"
+      }
+    },
+    "Friday": {
+      "lunch": {
+        "name": "Kycklingvingar",
+        "price": 81.0,
+        "description": "Kryddiga kycklingvingar med dipsås",
+        "time": "11:00-14:00"
+      },
+      "dinner": {
+        "name": "Nachos",
+        "price": 72.0,
+        "description": "Tortillachips med ost och jalapeños",
+        "time": "17:00-20:00"
+      }
+    },
+    "Saturday": {
+      "lunch": {
+        "name": "Coca Cola",
+        "price": 27.0,
+        "description": "Klassisk Coca Cola",
+        "time": "11:00-14:00"
+      },
+      "dinner": {
+        "name": "Apelsinjuice",
+        "price": 36.0,
+        "description": "Färskpressad apelsinjuice",
+        "time": "17:00-20:00"
+      }
+    },
+    "Sunday": {
+      "lunch": {
+        "name": "Lemonad",
+        "price": 31.5,
+        "description": "Hemlagad lemonad",
+        "time": "11:00-14:00"
+      },
+      "dinner": {
+        "name": "Is-te",
+        "price": 31.5,
+        "description": "Kall te med citron",
+        "time": "17:00-20:00"
+      }
+    }
+  }
+}
