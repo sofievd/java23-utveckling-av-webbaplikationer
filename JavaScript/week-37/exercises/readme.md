@@ -1,3 +1,8 @@
+# Övningsuppgifter JavaScript
+- [ ] Lös uppgifter i, exercises-start.js.
+
+- [ ] Fortsätt med övningar tillsammana med Jest.
+
 För att komma igång med dessa tester i JavaScript, följ dessa steg:
 
 1. **Installera Node.js och npm**:
