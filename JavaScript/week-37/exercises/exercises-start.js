@@ -5,7 +5,6 @@
 // 1. Skriv ut en hälsning
 // Skriv ett program som skriver ut "Hej världen!" till konsolen.
 
-
 // 2. Skapa en variabel och tilldela ett värde
 // Skapa en variabel `firstName` och tilldela den ditt namn. Skriv ut variabeln till konsolen.
 
@@ -16,6 +15,7 @@
 
 // 4. For-loop som räknar till 10
 // Skriv en for-loop som skriver ut siffrorna 1 till 10.
+
 
 
 // 5. Skapa en funktion
