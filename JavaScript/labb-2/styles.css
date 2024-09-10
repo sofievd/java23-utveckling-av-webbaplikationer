@@ -14,7 +14,6 @@
 
 body {
   margin: 0;
-  /* width: 100%; */
   font-family: Arial, sans-serif;
   box-sizing: border-box;
   color: white;
@@ -59,58 +58,8 @@ body {
   font-weight: 700;
 }
 
-.menu__container {
-  margin: 0 auto;
-  width: 90%;
-  background-color: var(--brown--transparent);
-  border: 1px solid white;
-}
-
-.menu__list > ul {
-  list-style: none;
-  padding: 0;
-}
-
-.menu__option {
-  padding-bottom: .3rem;
-}
-
-.menu__title {
-  display: flex;
-  align-items: center;
-}
-
-.dish__name {
-  margin-right: 1rem;
-}
-
-.separator {
-  flex-grow: 1;
-  border-bottom: 2px solid var(--orange);
-  margin: 0 .1rem;
-}
-
-.dish__price {
-  margin-left: 1rem;
-}
-
 header h1 {
   margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
 }
 
 #contact {
@@ -131,15 +80,4 @@ footer {
   /* position: fixed; */
   width: 100%;
   bottom: 0;
-}
-
-@media screen and (min-width: 600px) {
-  .menu__list {
-    margin: 1rem 2rem;
-    padding: .3rem .5rem;
-    border-radius: .5rem;
-    border: 3px solid salmon;
-    background-color: #333;
-    color: whitesmoke;
-  }
 }
