@@ -1,23 +1,19 @@
 .specials__menu {
   position: absolute;
-  display: none;
+  top: 0;
+  right: 0;
 
   background-color: var(--brown);
   border-left: 1px solid var(--warm-yellow);
   border-bottom: 1px solid var(--warm-yellow);
   padding: 1rem;
 
-  transition: all 0.3s ease-out;
+  transition: transform 0.2s ease-out;
+  transform: translateX(100%);
 }
 
 .specials__menu--open {
-  display: block;
-  top: 0;
-  right: 0;
-}
-
-.specials__menu--closed {
-  display: none;
+  transform: translateX(0);
 }
 
 .specials__menu > div {
