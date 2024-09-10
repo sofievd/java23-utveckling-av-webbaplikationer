@@ -9,6 +9,7 @@
 .menu__container {
   border: 1px solid var(--warm-yellow);
   background-color: var(--dark-gray);
+  min-height: 300px;
   margin: 0 .5rem;
   margin-bottom: .5rem;
   padding: .8rem;
