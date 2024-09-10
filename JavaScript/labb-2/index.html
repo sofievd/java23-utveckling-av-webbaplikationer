@@ -19,12 +19,16 @@
         <p>Best food in town</p>
     </section>
     <section class="specials__container">
-      <h2 id="specials-title">Dinner Special</h2>
-      <div class="specials__header">
-        <p id="specials-dish-name">Name of dish</p>
-        <p id="specials-price">130kr</p>
+      <!-- Visas när ingen data laddats -->
+      <img src="./images/loading.gif" id="js-loading" class="loading-spinner hidden" alt="Page loader" width="100%"/>
+      <div class="specials__content">
+        <h2 id="specials-title">Dinner Special</h2>
+        <div class="specials__header">
+          <p id="specials-dish-name">Name of dish</p>
+          <p id="specials-price">130kr</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </section>
 
     <section class="nav__container">
@@ -40,44 +44,26 @@
           <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
         </a>
       </nav>
-      <!-- <div id="content" class="menu__container">
-      </div> -->
-      <div id="content" class="menu__container"><h2>Grill</h2><ul class="menu__list"><li class="menu__option"><h3 class="menu__title"><span class="dish__name">BBQ Ribs</span><span class="separator"></span><span class="dish__price">$12.0</span></h3><p class="dish__description">Slow-cooked ribs with BBQ sauce</p></li><li class="menu__option"><h3 class="menu__title"><span class="dish__name">Grilled Chicken</span><span class="separator"></span><span class="dish__price">$15.0</span></h3><p class="dish__description">Marinated chicken breast grilled to perfection</p></li><li class="menu__option"><h3 class="menu__title"><span class="dish__name">Steak</span><span class="separator"></span><span class="dish__price">$19.0</span></h3><p class="dish__description">Juicy steak with garlic butter</p></li><li class="menu__option"><h3 class="menu__title"><span class="dish__name">Grilled Salmon</span><span class="separator"></span><span class="dish__price">$18.0</span></h3><p class="dish__description">Salmon fillet with lemon and herbs</p></li><li class="menu__option"><h3 class="menu__title"><span class="dish__name">Vegetable Skewers</span><span class="separator"></span><span class="dish__price">$8.0</span></h3><p class="dish__description">Assorted vegetables grilled with olive oil</p></li></ul></div>
+      <section id="content" class="menu__container">
+        <!-- exempel på hur det skulle kunna se ut -->
+        <h2>Grill</h2>
+        <ul class="menu__list">
+          <li class="menu__option">
+            <h3 class="menu__title">
+              <span class="dish__name">BBQ Ribs</span><span class="separator"></span
+              ><span class="dish__price">$12.0</span>
+            </h3>
+            <p class="dish__description">Slow-cooked ribs with BBQ sauce</p>
+          </li>
+          <!-- listan fortsätter... -->
+        </ul>
+      </section>        
 
-      <aside class="specials__menu specials__menu--open">
+      <aside id="specials" class="specials__menu">
         <h3>This weeks specials</h3>
-        <div>
-          <p>Monday</p>
-          <p>Lunch: Lorem ipsum dolor sit amet.</p>
-          <p>Dinner: Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-          <p>Tuesday</p>
-          <p>Lunch: Lorem ipsum dolor sit amet.</p>
-          <p>Dinner: Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-          <p>Wednesday</p>
-          <p>Lunch: Lorem ipsum dolor sit amet.</p>
-          <p>Dinner: Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-          <p>Thursday</p>
-          <p>Lunch: Lorem ipsum dolor sit amet.</p>
-          <p>Dinner: Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-          <p>Friday</p>
-          <p>Lunch: Lorem ipsum dolor sit amet.</p>
-          <p>Dinner: Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-          <p>Saturday</p>
-          <p>Lunch: Lorem ipsum dolor sit amet.</p>
-          <p>Dinner: Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-          <p>Sunday</p>
+        <!-- Exempel på hur det skulle kunna se ut -->
+        <div class="specials__content">
+          <h4>Monday</h4>
           <p>Lunch: Lorem ipsum dolor sit amet.</p>
           <p>Dinner: Lorem ipsum dolor sit amet.</p>
         </div>
