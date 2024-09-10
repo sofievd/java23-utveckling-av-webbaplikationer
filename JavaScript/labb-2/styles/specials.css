@@ -1,0 +1,30 @@
+.specials__container > h2, 
+.specials__container > p,
+.specials__header > p {
+  margin: .3rem 0;
+}
+
+.specials__container > p {
+  padding-bottom: .3rem;
+  max-width: 600px;
+  width: 90%;
+}
+
+.specials__container {
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: var(--brown--transparent);
+  border: 1px solid var(--warm-yellow);
+  padding: 0 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.specials__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specials__header > p {
+  font-weight: 700;
+}

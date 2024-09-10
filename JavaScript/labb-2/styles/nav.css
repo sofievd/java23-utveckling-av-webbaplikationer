@@ -4,7 +4,7 @@
 }
 
 .options {
-  background-color: var(--brown--transparent);
+  background-color: inherit;
   border-style: none;
   color: white;
   padding: .5rem .8rem;
