@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./styles/specials-menu.css">
   <link rel="stylesheet" href="./styles/specials-content.css">
   <link rel="stylesheet" href="./styles/menu.css">
-  <!-- <script src="./facit/app.js" type="module" defer></script> -->
+  <script src="./facit/app.js" type="module" defer></script>
 </head>
 <body>
   <main class="hero overlay">
@@ -21,16 +21,16 @@
     <section class="specials__container">
       <!-- Visas när ingen data laddats -->
       <img src="./images/loading.gif" id="js-loading" class="loading-spinner" alt="Sidladdare" width="50%"/>
-      <div class="specials__content">
+      <div id="specials__content" class="specials__content">
         <!-- <div class="specials__title">
-          <h2 id="specials-title">Middagsspecial</h2>
+          <h2 id="specials-title">Dagens lunch</h2>
           <button class="button button--specials">Gårdagens</button>
         </div>
         <div class="specials__header">
-          <p id="specials-dish-name">Namn på rätt</p>
+          <p id="specials-dish-name">Grillad Kyckling</p>
           <p id="specials-price">130kr</p>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+        <p>Marinerad kycklingbröst grillad till perfektion.</p> -->
       </div>
     </section>
 
@@ -48,24 +48,12 @@
         </a>
       </nav>
       <section id="content" class="menu__container">
-        <!-- exempel på hur det skulle kunna se ut -->
-        <!-- <h2>Grill</h2>
-        <ul class="menu__list">
-          <li class="menu__option">
-            <h3 class="menu__title">
-              <span class="dish__name">BBQ Ribs</span><span class="separator"></span
-              ><span class="dish__price">120kr</span>
-            </h3>
-            <p class="dish__description">Långkokta revben med BBQ-sås</p>
-          </li> -->
-          <!-- listan fortsätter... -->
-        </ul>
       </section>        
 
-      <aside id="specials" class="specials__menu">
+      <aside id="specials-menu" class="specials__menu">
         <h3>Veckas specialerbjudanden</h3>
         <!-- Exempel på hur det skulle kunna se ut -->
-        <!-- <div class="specials__content">
+        <!-- <div>
           <h4>Måndag</h4>
           <p>Lunch: Lorem ipsum dolor sit amet.</p>
           <p>Middag: Lorem ipsum dolor sit amet.</p>
