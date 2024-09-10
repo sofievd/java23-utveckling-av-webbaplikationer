@@ -32,6 +32,13 @@
   margin-bottom: 1.3rem;
 }
 
+.specials__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
 .specials__header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +52,21 @@
   font-weight: 700;
 }
 
+.button {
+  background-color: inherit;
+  border-style: none;
+  color: white;
+  padding: .5rem .8rem;
+}
+
+.button--specials {
+  padding: .3rem .8rem;
+  background-color: var(--dark-gray);
+  border: 1px solid var(--warm-yellow);
+}
+
 .specials__content {
+  min-height: 166px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.1s ease-in,
