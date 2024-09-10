@@ -41,11 +41,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 13vh;
+  min-height: 13vh;
 }
 
 #home > .welcome {
+  padding: 0 3rem;
   padding-top: 1.3rem;
+
 }
 
 #home > h1,
