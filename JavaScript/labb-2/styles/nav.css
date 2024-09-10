@@ -1,0 +1,21 @@
+.nav__menu {
+  padding: 0 2rem;
+  padding-top: .8rem;
+}
+
+.options {
+  background-color: var(--brown--transparent);
+  border-style: none;
+  color: white;
+  padding: .5rem .8rem;
+  font-size: 1.2rem;
+  margin-bottom: -.08rem;
+}
+
+.options--active {
+  background-color: var(--dark-gray);
+  border-top: 1px solid var(--warm-yellow);
+  border-left: 1px solid var(--warm-yellow);
+  border-right: 1px solid var(--warm-yellow);
+  border-bottom: 1px solid var(--brown--transparent);
+}

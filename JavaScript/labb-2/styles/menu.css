@@ -1,11 +1,18 @@
-.menu__container {
+.nav__container {
   margin: 0 auto;
   width: 90%;
   background-color: var(--brown--transparent);
   border: 1px solid var(--brown--transparent);
 }
 
-.menu__list > ul {
+.menu__container {
+  border: 1px solid var(--warm-yellow);
+  background-color: var(--dark-gray);
+  margin: 0 .5rem;
+  padding: .8rem;
+}
+
+.menu__container > ul {
   list-style: none;
   padding: 0;
 }

@@ -19,6 +19,10 @@ body {
   color: white;
 }
 
+main {
+  padding-bottom: 1.3rem;
+}
+
 .overlay {
   border-image:
   linear-gradient(
@@ -76,8 +80,6 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: .5rem;
-  /* position: fixed; */
-  width: 100%;
+  padding: .8rem 0;
   bottom: 0;
 }
