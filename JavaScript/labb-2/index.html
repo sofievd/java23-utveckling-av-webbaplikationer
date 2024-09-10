@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant Page</title>
+  <title>Restaurangsida</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/nav.css">
   <link rel="stylesheet" href="./styles/nav-secondary.css">
   <link rel="stylesheet" href="./styles/specials-menu.css">
   <link rel="stylesheet" href="./styles/specials-content.css">
-  <link rel="stylesheet" href="./styles/specials.css">
   <link rel="stylesheet" href="./styles/menu.css">
   <script src="./facit/app.js" defer></script>
 </head>
 <body>
   <main class="hero overlay">
-
     <section id="home">
-        <h1 class="welcome">Welcome to Karlssons</h1>
-        <p>Best food in town</p>
+        <h1 class="welcome">Välkommen till Karlssons</h1>
+        <p>Bästa maten i stan</p>
     </section>
     <section class="specials__container">
       <!-- Visas när ingen data laddats -->
-      <img src="./images/loading.gif" id="js-loading" class="loading-spinner" alt="Page loader" width="50%"/>
+      <img src="./images/loading.gif" id="js-loading" class="loading-spinner" alt="Sidladdare" width="50%"/>
       <div class="specials__content hidden">
-        <h2 id="specials-title">Dinner Special</h2>
+        <h2 id="specials-title">Middagsspecial</h2>
         <div class="specials__header">
-          <p id="specials-dish-name">Name of dish</p>
+          <p id="specials-dish-name">Namn på rätt</p>
           <p id="specials-price">130kr</p>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -37,7 +35,7 @@
       <nav class="nav__menu">
         <button class="options options--active" value="Grill">Grill</button>
         <button class="options" value="Snacks">Snacks</button>
-        <button class="options" value="Drycker">Beverage</button>
+        <button class="options" value="Drycker">Drycker</button>
       </nav>
       <nav class="nav__secondary">
         <a id="menu-toggle" class="menu-toggle">
@@ -53,27 +51,27 @@
           <li class="menu__option">
             <h3 class="menu__title">
               <span class="dish__name">BBQ Ribs</span><span class="separator"></span
-              ><span class="dish__price">$12.0</span>
+              ><span class="dish__price">120kr</span>
             </h3>
-            <p class="dish__description">Slow-cooked ribs with BBQ sauce</p>
+            <p class="dish__description">Långkokta revben med BBQ-sås</p>
           </li>
           <!-- listan fortsätter... -->
         </ul>
       </section>        
 
       <aside id="specials" class="specials__menu">
-        <h3>This weeks specials</h3>
+        <h3>Denna veckas specialerbjudanden</h3>
         <!-- Exempel på hur det skulle kunna se ut -->
         <div class="specials__content">
-          <h4>Monday</h4>
+          <h4>Måndag</h4>
           <p>Lunch: Lorem ipsum dolor sit amet.</p>
-          <p>Dinner: Lorem ipsum dolor sit amet.</p>
+          <p>Middag: Lorem ipsum dolor sit amet.</p>
         </div>
       </aside>
   </main>
   <footer>
-      <p>Restaurant Name &copy; 2024</p>
-      <p>All rights reserved.</p>
+      <p>Restaurangnamn &copy; 2024</p>
+      <p>Alla rättigheter förbehållna.</p>
   </footer>
 </body>
 </html>
