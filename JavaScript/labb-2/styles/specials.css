@@ -1,3 +1,13 @@
+.loading-spinner {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  aspect-ratio: 2/1;
+}
+.hidden {
+  display: none;
+}
+
 .specials__container > h2, 
 .specials__container > p,
 .specials__header > p {
