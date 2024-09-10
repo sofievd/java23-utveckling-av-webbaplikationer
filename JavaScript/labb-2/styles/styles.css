@@ -28,7 +28,7 @@ body {
 }
 
 .hero {
-  background-image: url("./images/brooke-lark-mobile.png");
+  background-image: url("../images/brooke-lark-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
