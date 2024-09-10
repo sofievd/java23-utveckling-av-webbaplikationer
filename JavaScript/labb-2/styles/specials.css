@@ -22,15 +22,19 @@
 }
 
 .specials__menu {
+  position: absolute;
+  display: none;
+
   background-color: var(--brown);
   border-left: 1px solid var(--warm-yellow);
   border-bottom: 1px solid var(--warm-yellow);
   padding: 1rem;
+
+  transition: all 0.3s ease-out;
 }
 
 .specials__menu--open {
-  position: absolute;
-  display: inline;
+  display: block;
   top: 0;
   right: 0;
 }
