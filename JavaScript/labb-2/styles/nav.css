@@ -3,6 +3,13 @@
   padding-top: .8rem;
 }
 
+.nav__secondary {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1;
+}
+
 .options {
   background-color: inherit;
   border-style: none;
@@ -10,6 +17,10 @@
   padding: .5rem .8rem;
   font-size: 1.2rem;
   margin-bottom: -.08rem;
+}
+
+.options:hover:not(.options--active) {
+  background-color: var(--brown--transparent);
 }
 
 .options--active {

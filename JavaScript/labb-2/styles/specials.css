@@ -4,6 +4,27 @@
   margin: .3rem 0;
 }
 
+.specials__menu {
+  background-color: var(--brown);
+  border-left: 1px solid var(--warm-yellow);
+  padding: 1rem;
+}
+
+.specials__menu--open {
+  position: absolute;
+  display: inline;
+  top: 0;
+  right: 0;
+}
+
+.specials__menu--closed {
+  display: none;
+}
+
+.specials__menu > div {
+  margin-bottom: 2rem;
+}
+
 .specials__container > p {
   padding-bottom: .3rem;
   max-width: 600px;

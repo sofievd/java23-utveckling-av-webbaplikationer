@@ -1,6 +1,7 @@
 .nav__container {
   margin: 0 auto;
   width: 90%;
+  max-width: 900px;
   background-color: var(--brown--transparent);
   border: 1px solid var(--brown--transparent);
 }
