@@ -6,11 +6,14 @@
   <title>Restaurant Page</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/nav-secondary.css">
   <link rel="stylesheet" href="./styles/specials.css">
   <link rel="stylesheet" href="./styles/menu.css">
+  <script src="./facit/app.js" defer></script>
 </head>
 <body>
   <main class="hero overlay">
+
     <section id="home">
         <h1 class="welcome">Welcome to Karlssons</h1>
         <p>Best food in town</p>
@@ -30,13 +33,17 @@
         <button class="options" value="Snacks">Snacks</button>
         <button class="options" value="Drycker">Beverage</button>
       </nav>
+      <nav class="nav__secondary">
+        <a id="menu-toggle" class="menu-toggle">
+          <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+          <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+          <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+        </a>
+      </nav>
       <!-- <div id="content" class="menu__container">
       </div> -->
       <div id="content" class="menu__container"><h2>Grill</h2><ul class="menu__list"><li class="menu__option"><h3 class="menu__title"><span class="dish__name">BBQ Ribs</span><span class="separator"></span><span class="dish__price">$12.0</span></h3><p class="dish__description">Slow-cooked ribs with BBQ sauce</p></li><li class="menu__option"><h3 class="menu__title"><span class="dish__name">Grilled Chicken</span><span class="separator"></span><span class="dish__price">$15.0</span></h3><p class="dish__description">Marinated chicken breast grilled to perfection</p></li><li class="menu__option"><h3 class="menu__title"><span class="dish__name">Steak</span><span class="separator"></span><span class="dish__price">$19.0</span></h3><p class="dish__description">Juicy steak with garlic butter</p></li><li class="menu__option"><h3 class="menu__title"><span class="dish__name">Grilled Salmon</span><span class="separator"></span><span class="dish__price">$18.0</span></h3><p class="dish__description">Salmon fillet with lemon and herbs</p></li><li class="menu__option"><h3 class="menu__title"><span class="dish__name">Vegetable Skewers</span><span class="separator"></span><span class="dish__price">$8.0</span></h3><p class="dish__description">Assorted vegetables grilled with olive oil</p></li></ul></div>
 
-      <nav class="nav__secondary">
-        |||
-      </nav>
       <aside class="specials__menu specials__menu--open">
         <h3>This weeks specials</h3>
         <div>

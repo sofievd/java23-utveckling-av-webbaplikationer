@@ -1,0 +1,44 @@
+.nav__secondary {
+  position: absolute;
+  padding: 1.5rem;
+}
+
+.menu-toggle {
+  position: absolute;
+  right: .5rem;
+  top: 25%;
+  transform: translate(0, -50%);
+  height: 26px;
+  width: 29px;
+}
+.menu-toggle, .menu-toggle:hover {
+  color: #000;
+}
+
+.menu-toggle-bar {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+}
+.menu-toggle-bar.menu-toggle-bar--top {
+  transform: translate(0, -8px);
+}
+.menu-toggle-bar.menu-toggle-bar--bottom {
+  transform: translate(0, 8px);
+}
+.nav-open .menu-toggle-bar.menu-toggle-bar--top {
+  transform: translate(0, 0) rotate(45deg);
+}
+.nav-open .menu-toggle-bar.menu-toggle-bar--middle {
+  opacity: 0;
+}
+.nav-open .menu-toggle-bar.menu-toggle-bar--bottom {
+  transform: translate(0, 0) rotate(-45deg);
+}
