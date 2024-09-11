@@ -32,26 +32,3 @@ button.addEventListener('click', () => {
 
   console.log(frukter)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-// const input = document.querySelector('#input')
-// const button = document.querySelector('#button')
-
-// button.addEventListener('click', () => {
-//   console.log(frukter.push(input.value))
-//   render()
-// })
