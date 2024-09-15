@@ -1,5 +1,4 @@
 let currentDayIndex = new Date().getDate();
-console.log(new Date(), currentDayIndex)
 
 async function fetchWeather(path) {
   const data = await fetch(path)
