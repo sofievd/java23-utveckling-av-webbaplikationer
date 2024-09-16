@@ -23,14 +23,18 @@ const formatTime = () => {
   setInterval(() => {
     date = new Date()
 
-    // dag - tid - (datum)
-    todayDisplay.textContent = veckoDagar[currentDay] + " kl: " + date.getHours() + ":" + date.getMinutes() +  ":" + date.getSeconds() + " (" + (date.getMonth() + 1) + "/" + date.getDate() +")"
+    const currentHour = date.getHours()
+    const currentMinute = date.getMinutes().toString().padStart(2, '0');
+    const currentSecond = date.getSeconds().toString().padStart(2, '0')
+    const currentDate = `(${(date.getMonth() + 1)}/${date.getDate()})`
+    const currentDay2 = veckoDagar[currentDay];
 
+    // dag - tid - (datum)
+    todayDisplay.textContent = `
+    ${currentDay2} kl: ${currentHour}:${currentMinute}:${currentSecond} ${currentDate}
+    `
 
   }, 1000)
-  return date.getHours() + ":" + date.getMinutes().toString().padStart(2, '0')
 };
 
-
-
-console.log(formatTime())
+formatTime()
