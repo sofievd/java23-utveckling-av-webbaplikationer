@@ -1,4 +1,3 @@
-const url = "./weather.json";
 
 async function fetchWeather(path) {
   const data = await fetch(path)
@@ -7,7 +6,26 @@ async function fetchWeather(path) {
     return data
 }
 
+const url = "./weather.json";
 // console.log(fetchWeather(url))
+
+async function renderWeather() {
+
+  const weatherData = await fetchWeather(url)
+  const currentFormattedDate = date.toISOString().substring(0, 10)
+
+  const currentDayWeather = weatherData.weather_data
+    .find(data => currentFormattedDate === data.date)
+  
+  console.log(currentDayWeather.temperatures)
+
+  // filter weatherData to find current day
+  // console.log(weatherData.weather_data[15].date);
+  
+  // console.log(currentFormattedDate);
+}
+
+renderWeather()
 
 const todayDisplay = document.querySelector("#today");
 
@@ -38,3 +56,19 @@ const formatTime = () => {
 };
 
 formatTime()
+
+
+
+/*
+  "weather-times": [
+    "morning-midday-evening"
+  ],
+    "weather_data": [
+    {
+      "date": "2024-10-01",
+      "temperatures": "15°C-20°C-18°C",
+      "humidity": "High"
+    },
+    //...
+  ]
+*/
