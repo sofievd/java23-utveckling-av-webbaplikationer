@@ -1,4 +1,3 @@
-
 async function fetchWeather(path) {
   const data = await fetch(path)
     .then(response => response.json())
@@ -6,26 +5,42 @@ async function fetchWeather(path) {
     return data
 }
 
-const url = "./weather.json";
-// console.log(fetchWeather(url))
-
 async function renderWeather() {
-
+  const url = "./weather.json";
   const weatherData = await fetchWeather(url)
   const currentFormattedDate = date.toISOString().substring(0, 10)
 
   const currentDayWeather = weatherData.weather_data
-    .find(data => currentFormattedDate === data.date)
-  
-  console.log(currentDayWeather.temperatures)
+    .find(data => currentFormattedDate === data.date);
 
-  // filter weatherData to find current day
-  // console.log(weatherData.weather_data[15].date);
-  
-  // console.log(currentFormattedDate);
+    const temperatures = currentDayWeather.temperatures.split("-")
+
+    const currentHour = date.getHours();
+    let currentTemp;
+    const morningTime = currentHour < 10
+    const middayTime = currentHour > 10 && currentHour < 17
+
+    if (morningTime) {
+      currentTemp = temperatures[0]
+      console.log("morgon", currentTemp)
+    } else if (middayTime) {
+      currentTemp = temperatures[1]
+      console.log("lunch", currentTemp)
+    } else {
+      currentTemp = temperatures[2]
+      console.log("kväll", currentTemp)
+    }
+
+  printWeather(currentTemp)
 }
 
 renderWeather()
+
+function printWeather(input) {
+  const weatherContent = document.querySelector("#tempratur");
+
+  weatherContent.textContent = "Senaste mätning: " + input
+}
 
 const todayDisplay = document.querySelector("#today");
 
@@ -34,8 +49,23 @@ const veckoDagar = [
 ];
 
 let date = new Date();
-const currentDay = date.getDay()
+let currentDay = date.getDay()
 const formatDate = date.getDate() + "/" + (date.getMonth() + 1)
+console.log(currentDay)
+
+const nextWeatherDay = document.querySelector("#button-next");
+nextWeatherDay.addEventListener('click', nextDay)
+
+function nextDay() {
+  
+  if (currentDay < 6) {
+    currentDay += 1
+  } else {
+    currentDay = 0
+  }
+
+  console.log("current day:", currentDay)
+}
 
 const formatTime = () => {
   setInterval(() => {
@@ -56,19 +86,3 @@ const formatTime = () => {
 };
 
 formatTime()
-
-
-
-/*
-  "weather-times": [
-    "morning-midday-evening"
-  ],
-    "weather_data": [
-    {
-      "date": "2024-10-01",
-      "temperatures": "15°C-20°C-18°C",
-      "humidity": "High"
-    },
-    //...
-  ]
-*/
