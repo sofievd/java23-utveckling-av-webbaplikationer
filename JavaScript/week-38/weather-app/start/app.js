@@ -22,13 +22,10 @@ async function renderWeather() {
 
     if (morningTime) {
       currentTemp = temperatures[0]
-      console.log("morgon", currentTemp)
     } else if (middayTime) {
       currentTemp = temperatures[1]
-      console.log("lunch", currentTemp)
     } else {
       currentTemp = temperatures[2]
-      console.log("kväll", currentTemp)
     }
 
   printWeather(currentTemp)
@@ -65,24 +62,27 @@ function nextDay() {
   }
 
   console.log("current day:", currentDay)
+  formatTime(currentDay);
 }
 
-const formatTime = () => {
-  setInterval(() => {
-    date = new Date()
+const formatTime = (day) => {
+    // date = new Date()
+
+    console.log("pow", day)
 
     const currentHour = date.getHours()
     const currentMinute = date.getMinutes().toString().padStart(2, '0');
     const currentSecond = date.getSeconds().toString().padStart(2, '0')
-    const currentDate = `(${(date.getMonth() + 1)}/${date.getDate()})`
-    const currentDay2 = veckoDagar[currentDay];
+    const currentDate = `(${date.getDate()}/${(date.getMonth() + 1)})`
+    const currentDay2 = veckoDagar[day];
 
     // dag - tid - (datum)
     todayDisplay.textContent = `
     ${currentDay2} kl: ${currentHour}:${currentMinute}:${currentSecond} ${currentDate}
     `
 
-  }, 1000)
-};
 
-formatTime()
+};
+setInterval(() => {
+  formatTime(currentDay)
+}, 1000)
