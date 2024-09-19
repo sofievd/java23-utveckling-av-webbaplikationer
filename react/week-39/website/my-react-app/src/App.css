@@ -123,6 +123,10 @@ article {
   color: var(--black);
 }
 
+.responsive-img {
+  width: 100%;
+}
+
 .full-width {
   background-color: var(--cream-white);
 }

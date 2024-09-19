@@ -8,7 +8,11 @@ function Article() {
     
     return (
       <article key={index}>
-        <img src={imgSrc} alt={title} width={300} />
+        <img
+          src={imgSrc}
+          className='responsive-img'
+          alt={title}
+        />
         <h2>{title}</h2>
         <p>{content}</p>
         <a className="button" href="#">{buttonText}</a>
