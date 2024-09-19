@@ -107,7 +107,7 @@ body {
 .hero-livingroom {
   min-height: 100vh;
   width: 100%;
-  background-image: url("../images/zaji-kanamajina-mobile.png");
+  background-image: url("../public/zaji-kanamajina-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -231,7 +231,7 @@ body {
 .hero-livingroom {
   min-height: 100vh;
   width: 100%;
-  background-image: url("../images/zaji-kanamajina-mobile.png");
+  background-image: url("../public/zaji-kanamajina-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -350,7 +350,7 @@ footer {
     display: none;
   }
   .hero-wrapper {
-    background-image: url("../images/zaji-kanamajina-JpvuRFYb_Jg-unsplash-2.jpg");
+    background-image: url("../public/zaji-kanamajina-JpvuRFYb_Jg-unsplash-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
