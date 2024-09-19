@@ -1,6 +1,7 @@
-import './App.css'
 import Hero from './components/Hero'
 import Article from './components/Article'
+import Footer from './components/Footer'
+import './App.css'
 
 function App() {
   return (
@@ -10,9 +11,8 @@ function App() {
         <section className="hero-livingroom"></section>
         <Article />
       </main>
-      <footer>
-        hello
-      </footer>
+
+      <Footer />
     </>
   )
 }
