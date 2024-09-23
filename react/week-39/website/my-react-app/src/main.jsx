@@ -2,8 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx'
-import Review from './view/Review/index.jsx';
 import './index.css'
+import ReviewForm from './view/ReviewForm/index.jsx';
 
 const router = createBrowserRouter([
   {
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: "tyck-till",
-    element: <Review />,
+    element: <ReviewForm />,
   },
 ]);
 
