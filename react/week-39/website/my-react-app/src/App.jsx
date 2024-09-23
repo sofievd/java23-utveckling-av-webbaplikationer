@@ -7,16 +7,18 @@ import Service from './components/Service'
 import Invoice from './components/Invoice'
 
 function App() {
+  const invoiceMessage = "hej från parent"
+
   return (
     <>
-      <Hero />
+      <Hero message={invoiceMessage}/>
       <main>
         <HeroImg />
 
         <Article />
         <Service />
         
-        <Invoice />
+        <Invoice message={invoiceMessage}/>
       </main>
 
       <Footer />
