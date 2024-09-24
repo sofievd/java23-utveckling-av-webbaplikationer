@@ -8,9 +8,12 @@
   --orange: #be6321; /* Accent color */
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  box-sizing: border-box;
   font-family: "Playfair Display", serif;
   background-color: var(--cream-white);
 }
