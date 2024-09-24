@@ -14,7 +14,7 @@ List.propTypes = {
   reviews: PropTypes.arrayOf(
     PropTypes.shape({
       username: PropTypes.string.isRequired,
-      review: PropTypes.string.isRequired,
+      feedback: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
