@@ -126,6 +126,15 @@ article {
   color: var(--black);
 }
 
+form > div {
+  display: grid;
+  gap: .5rem;
+}
+#submit__button {
+  margin: .8rem 0;
+  margin-left: auto;
+}
+
 .review {
   display: grid;
 }
@@ -135,9 +144,14 @@ article {
 }
 
 .review__input {
-
   display: grid;
   gap: 1rem;
+}
+
+#username,
+#feedback {
+  color: inherit;
+  background-color: inherit;
 }
 
 .responsive-img {
