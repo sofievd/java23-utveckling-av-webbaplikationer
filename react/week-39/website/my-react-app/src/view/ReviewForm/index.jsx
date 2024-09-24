@@ -10,6 +10,11 @@ function ReviewForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (username === '' || feedback === '') {
+      return
+    }
+    
     try {
       const response = await fetch('http://localhost:3000/reviews', {
         method: 'POST',
@@ -67,7 +72,9 @@ function ReviewForm() {
               onChange={(e) => setFeedback(e.target.value)}
             ></textarea>
           </div>
-          <button type="submit" className="button button--cta">Skicka</button>
+          <div>
+            <button type="submit" id='submit__button' className="button button--cta">Skicka</button>
+          </div>
         </form>
         <Link to="/" className="button">Tillbaka</Link>
       </article>
