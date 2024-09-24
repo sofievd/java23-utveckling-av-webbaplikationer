@@ -1,15 +1,35 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function ReviewForm() {
   const [username, setUsername] = useState('');
   const [feedback, setFeedback] = useState('');
   const [isAnonymous, setIsAnonymous] = useState(false);
 
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log({ username, feedback, isAnonymous });
+    try {
+      const response = await fetch('http://localhost:3000/reviews', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          username,
+          feedback,
+          isAnonymous,
+        })
+      });
+      
+      const data = await response.json()
+      console.log('Review submitted:', data);
+
+      navigate('/');
+    } catch (error) {
+      console.error('Error submitting review:', error);
+    }
   };
 
   return (
