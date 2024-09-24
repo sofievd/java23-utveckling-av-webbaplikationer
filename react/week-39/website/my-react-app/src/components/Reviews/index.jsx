@@ -9,7 +9,6 @@ function List({ reviews }) {
   return <ul>{listItems}</ul>;
 }
 
-
 List.propTypes = {
   reviews: PropTypes.arrayOf(
     PropTypes.shape({
@@ -26,7 +25,7 @@ function Reviews() {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await fetch('http://localhost:3000/reviews');
+        const response = await fetch(`${import.meta.env.VITE_API_URL}`);
         const data = await response.json();
         console.log("fetch", data)
         setReviews(data);
