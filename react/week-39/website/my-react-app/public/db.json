@@ -83,6 +83,18 @@
       "username": "johan",
       "feedback": "Bra jobb!",
       "isAnonymous": false
+    },
+    {
+      "id": "4500",
+      "username": "Kajsa",
+      "feedback": "Test slow 4g",
+      "isAnonymous": false
+    },
+    {
+      "id": "d2ed",
+      "username": "Kajsa",
+      "feedback": "redirect",
+      "isAnonymous": false
     }
   ]
 }
