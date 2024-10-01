@@ -77,7 +77,6 @@ function ReviewForm() {
             <button type="submit" id='submit__button' className="button button--cta">Skicka</button>
           </div>
         </form>
-        <a href="/">TEST Tillbaka</a>
         <Link to="/" className="button">Tillbaka</Link>
       </article>
     </main>
