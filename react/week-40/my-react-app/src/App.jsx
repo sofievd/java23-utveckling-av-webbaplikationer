@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       <Hero message={invoiceMessage}/>
+      <p>Shopping icon</p>
       <main>
         <HeroImg />
         <Reviews />
