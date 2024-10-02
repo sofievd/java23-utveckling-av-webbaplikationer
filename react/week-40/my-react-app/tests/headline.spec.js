@@ -15,5 +15,5 @@ test('should take you to leave review', async ({ page }) => {
   await page.getByRole('link', { name: 'Lämna omdöme' }).click();
 
   // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Tyck till!' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Tyck till om oss!' })).toBeVisible();
 });

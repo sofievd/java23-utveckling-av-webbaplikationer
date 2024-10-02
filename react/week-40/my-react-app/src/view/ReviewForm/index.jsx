@@ -41,7 +41,7 @@ function ReviewForm() {
   return (
     <main className="review__container">
       <article className="review__input">
-        <h1>Tyck till!</h1>
+        <h1>Tyck till om oss!</h1>
         <p>Berätta vad du tycker</p>
         <form onSubmit={handleSubmit}>
           <div>
